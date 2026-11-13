@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>سياسة الخصوصية — iContacty</title>
+<title>سياسة الخصوصية — Aleman</title>
 <style>
   :root { --bg: #F8F4EC; --ink: #123330; --muted: #4A6B68; --accent: #0F8F83; --card: #FFFFFF; }
   @media (prefers-color-scheme: dark) { :root { --bg: #06181A; --ink: #E8F4F2; --muted: #9FC0BC; --accent: #2DD4BF; --card: #0C2427; } }
@@ -22,7 +22,7 @@
 <main>
   <article>
     <h1>سياسة الخصوصية</h1>
-    <p class="sub">تطبيق «أسمائي» (iContacty) — آخر تحديث: 23 أكتوبر 2026</p>
+    <p class="sub">تطبيق «الإيمان» (Aleman) — آخر تحديث: 13 نوفمبر 2026</p>
 
     <h2>ما الذي يصل إليه التطبيق</h2>
     <p>يقرأ التطبيق جهات الاتصال التي تسمح بها: جهات اتصال الآيفون عبر إذن iOS، وجهات اتصال حساب Google الذي تسجّل به داخل التطبيق عبر Google People API بصلاحية <code>contacts</code>. يشمل ذلك الأسماء والأرقام والإيميلات والشركات والصور والمجموعات (التصنيفات).</p>
@@ -30,29 +30,42 @@
     <h2>كيف تُستخدم البيانات</h2>
     <p>تُستخدم فقط لتقديم ميزات التطبيق بطلب منك: إضافة مفاتيح الدول، وتوحيد تنسيق الأرقام والتسميات، وحذف المكرر ودمجه، وتنسيق الأسماء، وإدارة المجموعات، ونقل جهات الاتصال بين الحسابات. لا يُحفظ أي تغيير قبل أن تراجعه وتوافق عليه.</p>
 
-    <h2>أين تُحفظ البيانات</h2>
-    <p>تتم كل المعالجة على جهازك. التطبيق لا يملك أي خادم، ولا يرسل جهات اتصالك لأي جهة غير Apple (جهات اتصال الآيفون) وGoogle (حسابك نفسه) عند حفظ التغييرات التي طلبتها. نسخ التراجع الاحتياطية تُحفظ على جهازك فقط، وتُحذف عند حذف السجل أو بعد المدة التي تختارها في الإعدادات. رمز الدخول إلى Google يُحفظ في سلسلة المفاتيح (Keychain) على جهازك.</p>
+    <h2>أين تُحفظ جهات الاتصال</h2>
+    <p>تتم معالجة جهات الاتصال كلها على جهازك، ولا تُرسل جهات اتصالك ولا بيانات Google People API إلى خادمنا أبداً. تذهب فقط إلى Apple (جهات اتصال الآيفون) وGoogle (حسابك نفسه) عند حفظ التغييرات التي طلبتها. نسخ التراجع الاحتياطية تُحفظ على جهازك فقط، وتُحذف عند حذف السجل أو بعد المدة التي تختارها في الإعدادات. رمز الدخول إلى Google يُحفظ في سلسلة المفاتيح (Keychain) على جهازك.</p>
+
+    <h2>ميزات الشركة (لموظفي الإيمان)</h2>
+    <p>ميزات الموظفين والحضور والرسائل تعمل عبر خادم الشركة (<code>api.hzagzoug.com</code>)، ولا تظهر إلا بعد اختيار الشركة وموافقة الإدارة على حسابك. عند استخدامها يحفظ الخادم:</p>
+    <ul>
+      <li><strong>هوية الحساب:</strong> الإيميل والاسم من دخول Google (من رمز الهوية فقط، وليس من جهات الاتصال)، أو معرّف Apple والإيميل الذي تشاركه Apple عند الدخول بـ Apple، وحالة الموافقة على الحساب.</li>
+      <li><strong>الربط بالموظف:</strong> كود الموظف المرتبط بحسابك. الرقم القومي يُستخدم مرة واحدة للتحقق ولا يُحفظ.</li>
+      <li><strong>الإشعارات:</strong> رمز الإشعارات لجهازك واختياراتك في الإعدادات.</li>
+      <li><strong>الرسائل:</strong> رسائل الإدارة وملفاتها (صور وصوت وفيديو)، وردودك عليها، ومن شاهد الرسالة أو فتحها، والمحادثات الخاصة بين المستخدمين. الإدارة تستطيع قراءة المحادثات الخاصة، ويظهر هذا التنبيه داخل المحادثة.</li>
+      <li><strong>الدخول للويب:</strong> جلسات الدخول لنظام المكتب واسم المتصفح.</li>
+      <li><strong>تعديل الأرقام:</strong> سجل لكل تعديل للرقم الشخصي في نظام الموظفين (من عدّل، والرقم القديم والجديد).</li>
+    </ul>
+    <p>بيانات الموظفين (الأسماء والأرقام والأقسام والوظائف والصور والحضور) تأتي من نظام الموارد البشرية في الشركة، ويحتفظ الخادم بنسخة من حالة الموظفين وأرقامهم لمعرفة التغييرات وإرسال الإشعارات. لو اخترت مزامنة الموظفين مع حساب Gmail، يكتب التطبيق جهات اتصال الموظفين في حسابك بطلبك.</p>
 
     <h2>حماية البيانات</h2>
-    <p>نحمي بياناتك الحساسة (جهات الاتصال ورموز الدخول) بهذه الوسائل:</p>
+    <p>نحمي بياناتك الحساسة بهذه الوسائل:</p>
     <ul>
-      <li><strong>التشفير أثناء النقل:</strong> كل الاتصال بـ Google يتم عبر HTTPS (TLS) فقط، ولا يسمح التطبيق بأي اتصال غير مشفّر.</li>
-      <li><strong>تسجيل دخول آمن:</strong> يتم الدخول إلى Google عبر صفحة Google الرسمية باستخدام OAuth 2.0 مع PKCE، فلا يرى التطبيق كلمة مرورك ولا يحفظها أبداً.</li>
-      <li><strong>تشفير الرموز على الجهاز:</strong> رمز الدخول يُحفظ في سلسلة المفاتيح (Keychain) المشفّرة من iOS، مقيّداً بهذا الجهاز فقط، فلا يُنقل لأجهزة أخرى ولا يدخل في النسخ الاحتياطية.</li>
+      <li><strong>التشفير أثناء النقل:</strong> كل الاتصال بـ Google وبخادم الشركة يتم عبر HTTPS (TLS) فقط، ولا يسمح التطبيق بأي اتصال غير مشفّر.</li>
+      <li><strong>تسجيل دخول آمن:</strong> يتم الدخول إلى Google عبر صفحة Google الرسمية باستخدام OAuth 2.0 مع PKCE، والدخول إلى Apple عبر Sign in with Apple، فلا يرى التطبيق كلمة مرورك ولا يحفظها أبداً.</li>
+      <li><strong>تشفير الرموز على الجهاز:</strong> رموز الدخول تُحفظ في سلسلة المفاتيح (Keychain) المشفّرة من iOS، مقيّدة بهذا الجهاز فقط، فلا تُنقل لأجهزة أخرى ولا تدخل في النسخ الاحتياطية.</li>
       <li><strong>تشفير الملفات المحفوظة:</strong> نسخ التراجع الاحتياطية تُحفظ داخل التطبيق بحماية البيانات الكاملة في iOS (Complete File Protection)، فتبقى مشفّرة ولا يمكن قراءتها والجهاز مقفل.</li>
-      <li><strong>لا خوادم ولا تخزين سحابي لدينا:</strong> لا نجمع بياناتك على أي خادم، فلا توجد قاعدة بيانات لدينا يمكن تسريبها.</li>
-      <li><strong>أقل صلاحيات ممكنة:</strong> نطلب صلاحية جهات الاتصال فقط، ولا نصل لأي بيانات أخرى في حسابك.</li>
+      <li><strong>جهات الاتصال لا تغادر جهازك إلى خادمنا:</strong> خادم الشركة لا يستقبل جهات اتصالك ولا بيانات Google People API.</li>
+      <li><strong>خادم محمي:</strong> الخادم لا يقبل إلا الطلبات المشفّرة، وكلمة مرور نظام الموظفين لا تصل للتطبيق، والوصول للبيانات حسب صلاحية كل حساب.</li>
+      <li><strong>أقل صلاحيات ممكنة:</strong> من Google نطلب صلاحية جهات الاتصال فقط، ولا نصل لأي بيانات أخرى في حسابك.</li>
       <li><strong>تحكمك الكامل:</strong> لا يُحفظ أي تغيير قبل موافقتك، ويمكنك التراجع من السجل، وتسجيل الخروج يلغي الرمز ويحذفه من جهازك فوراً.</li>
     </ul>
 
     <h2>المشاركة</h2>
-    <p>لا نبيع بياناتك ولا نشاركها ولا نستخدمها للإعلانات أو لتدريب نماذج الذكاء الاصطناعي، ولا ننقلها لأي طرف ثالث. لا يحتوي التطبيق على أدوات تتبّع أو تحليلات.</p>
+    <p>لا نبيع بياناتك ولا نستخدمها للإعلانات أو لتدريب نماذج الذكاء الاصطناعي، ولا ننقلها لأي طرف ثالث. بيانات ميزات الشركة تراها إدارة الشركة والمستخدمون الموافق عليهم حسب صلاحياتهم فقط. الإشعارات تُرسل عبر خدمة الإشعارات من Apple. لا يحتوي التطبيق على أدوات تتبّع أو تحليلات.</p>
 
     <h2>استخدام بيانات Google</h2>
     <p>استخدام التطبيق للمعلومات التي يتلقاها من Google APIs ونقلها يلتزم بـ <a href="https://developers.google.com/terms/api-services-user-data-policy">سياسة بيانات المستخدم لخدمات Google API</a>، بما في ذلك متطلبات الاستخدام المحدود (Limited Use).</p>
 
     <h2>إلغاء الوصول وحذف البيانات</h2>
-    <p>يمكنك تسجيل الخروج من حساب Google من إعدادات التطبيق، فيُلغى الرمز ويُحذف من جهازك. ويمكنك إلغاء الإذن في أي وقت من <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>، وإلغاء إذن جهات اتصال الآيفون من الإعدادات › التطبيقات › أسمائي. حذف التطبيق يحذف كل بياناته من جهازك.</p>
+    <p>يمكنك تسجيل الخروج من حساب Google من إعدادات التطبيق، فيُلغى الرمز ويُحذف من جهازك. ويمكنك إلغاء الإذن في أي وقت من <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>، وإلغاء إذن جهات اتصال الآيفون من الإعدادات › التطبيقات › الإيمان. حذف التطبيق يحذف كل بياناته من جهازك. لحذف بيانات حسابك من خادم الشركة اطلب ذلك من الإدارة أو من رابط التواصل أدناه.</p>
 
     <h2>التواصل</h2>
     <p>لأي سؤال: <a href="https://github.com/HussainZagzoug/icontacty-site/issues">github.com/HussainZagzoug/icontacty-site/issues</a></p>
@@ -62,7 +75,7 @@
 
   <article lang="en" id="en">
     <h1>Privacy Policy</h1>
-    <p class="sub">iContacty — Last updated: October 23, 2026</p>
+    <p class="sub">Aleman — Last updated: November 13, 2026</p>
 
     <h2>What the app accesses</h2>
     <p>The app reads the contacts you allow: the iPhone's contacts through iOS permission, and the contacts of any Google account you sign in with inside the app, through the Google People API with the <code>contacts</code> scope. This includes names, phone numbers, emails, companies, photos and groups (labels).</p>
@@ -70,29 +83,42 @@
     <h2>How the data is used</h2>
     <p>Only to provide the app's features at your request: adding country codes, unifying number formats and labels, removing and merging duplicates, formatting names, managing groups, and moving contacts between accounts. No change is saved until you review and approve it.</p>
 
-    <h2>Where the data is kept</h2>
-    <p>All processing happens on your device. The app has no server and sends your contacts to no one other than Apple (iPhone contacts) and Google (your own account) when saving the changes you asked for. Undo backups are stored only on your device and are deleted when you clear History or after the period you choose in Settings. The Google sign-in token is stored in the device Keychain.</p>
+    <h2>Where your contacts are kept</h2>
+    <p>All contact processing happens on your device. Your contacts and any Google People API data are never sent to our server; they go only to Apple (iPhone contacts) and Google (your own account) when saving the changes you asked for. Undo backups are stored only on your device and are deleted when you clear History or after the period you choose in Settings. The Google sign-in token is stored in the device Keychain.</p>
+
+    <h2>Company features (for Aleman employees)</h2>
+    <p>The staff, attendance and messages features work through the company server (<code>api.hzagzoug.com</code>) and appear only after you choose the company and management approves your account. When you use them, the server keeps:</p>
+    <ul>
+      <li><strong>Account identity:</strong> your email and name from Google sign-in (from the identity token only, never from your contacts), or your Apple ID identifier and the email Apple shares when you sign in with Apple, and whether your account is approved.</li>
+      <li><strong>Employee link:</strong> the employee code linked to your account. The national ID is used once to verify you and is not stored.</li>
+      <li><strong>Notifications:</strong> your device's push token and your notification choices.</li>
+      <li><strong>Messages:</strong> management's messages and their files (photos, audio, video), your replies, who saw or opened each message, and private conversations between users. Management can read private conversations, and the conversation screen says so.</li>
+      <li><strong>Web sign-in:</strong> sign-in sessions for the office website and the browser's name.</li>
+      <li><strong>Number edits:</strong> a record of each personal number change made in the HR system (who changed it, and the old and new number).</li>
+    </ul>
+    <p>Employee data (names, numbers, departments, jobs, photos and attendance) comes from the company's HR system, and the server keeps a copy of employees' status and numbers to detect changes and send notifications. If you choose to sync employees to a Gmail account, the app writes the employee contacts to that account at your request.</p>
 
     <h2>Data protection</h2>
-    <p>We protect your sensitive data (contacts and sign-in tokens) with the following mechanisms:</p>
+    <p>We protect your sensitive data with the following mechanisms:</p>
     <ul>
-      <li><strong>Encryption in transit:</strong> all communication with Google uses HTTPS (TLS) only; the app allows no unencrypted connections.</li>
-      <li><strong>Secure sign-in:</strong> you sign in on Google's own page using OAuth 2.0 with PKCE, so the app never sees or stores your Google password.</li>
-      <li><strong>Encrypted token storage:</strong> the sign-in token is stored in the encrypted iOS Keychain, restricted to this device only, so it is never synced to other devices or included in backups.</li>
+      <li><strong>Encryption in transit:</strong> all communication with Google and with the company server uses HTTPS (TLS) only; the app allows no unencrypted connections.</li>
+      <li><strong>Secure sign-in:</strong> you sign in on Google's own page using OAuth 2.0 with PKCE, or with Sign in with Apple, so the app never sees or stores your password.</li>
+      <li><strong>Encrypted token storage:</strong> sign-in tokens are stored in the encrypted iOS Keychain, restricted to this device only, so they are never synced to other devices or included in backups.</li>
       <li><strong>Encryption at rest:</strong> undo backups are saved in the app's private container with iOS Complete File Protection, so they stay encrypted and unreadable while the device is locked.</li>
-      <li><strong>No servers or cloud storage of our own:</strong> we do not collect your data on any server, so there is no database of ours that could be breached.</li>
-      <li><strong>Least privilege:</strong> the app requests only the contacts scope and accesses no other data in your account.</li>
+      <li><strong>Your contacts never reach our server:</strong> the company server never receives your contacts or any Google People API data.</li>
+      <li><strong>A protected server:</strong> the server accepts only encrypted requests, the HR system's password never reaches the app, and each account sees only what its permissions allow.</li>
+      <li><strong>Least privilege:</strong> from Google the app requests only the contacts scope and accesses no other data in your account.</li>
       <li><strong>User control:</strong> no change is saved without your approval, every change can be undone from History, and signing out revokes the token and deletes it from your device immediately.</li>
     </ul>
 
     <h2>Sharing</h2>
-    <p>We do not sell, share or use your data for advertising or to train AI models, and we do not transfer it to any third party. The app contains no tracking or analytics.</p>
+    <p>We do not sell your data or use it for advertising or to train AI models, and we do not transfer it to any third party. Company feature data is seen only by company management and approved users, according to their permissions. Notifications are delivered through Apple's push notification service. The app contains no tracking or analytics.</p>
 
     <h2>Google user data</h2>
-    <p>iContacty's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>Aleman's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
     <h2>Revoking access and deleting data</h2>
-    <p>Sign out of a Google account in the app's Settings to revoke its token and remove it from your device. You can also revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and turn off iPhone contacts access in Settings › Apps › iContacty. Deleting the app removes all of its data from your device.</p>
+    <p>Sign out of a Google account in the app's Settings to revoke its token and remove it from your device. You can also revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and turn off iPhone contacts access in Settings › Apps › Aleman. Deleting the app removes all of its data from your device. To delete your account's data from the company server, ask company management or use the contact link below.</p>
 
     <h2>Contact</h2>
     <p>Questions: <a href="https://github.com/HussainZagzoug/icontacty-site/issues">github.com/HussainZagzoug/icontacty-site/issues</a></p>
